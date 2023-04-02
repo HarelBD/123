@@ -1,0 +1,769 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body{
+    direction: rtl;
+    margin:0 ;
+    background-color:#fcf8f8;}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color:white;
+    position:relative;
+    border:2px solid #a2a1a152;
+}
+
+/* לוגו שלי */
+img#logo{
+    margin-right:10px;
+    width:400px;
+}
+
+/* תפריט */
+.buttons{    
+    position:relative;
+    width:70px;
+    margin:15px;
+    bottom:20px;
+    font-family:arial;
+    text-decoration:none;
+    color:black;
+}
+
+/* פרטי משתמש */
+div#user_info{
+    font-family:arial;
+    text-align:left;
+    position: absolute;;
+    left:10px;
+    top:8px;
+}
+
+/* סמלים */
+div#icons{
+    position: absolute;
+    left:11px;
+    top:34px;
+    font-size:1.3em;
+}
+
+/*באנר מס'1*/
+img#banner{
+    width: 996px;
+}
+
+/*הנמכרים ביותר כותרת*/
+div#best_seller_header{
+    font-family:arial;
+    margin-top:0px;
+    margin-right: 15px;
+}
+
+/* שם המוצר */
+.product_name{
+    font-weight:bold;
+}
+
+/* מחיר */
+.price{
+    font-weight:bold;
+    color:blue;
+}
+
+/*דיב של סידור המזוודות במקביל*/
+.luggages{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-content: center;
+}
+
+/* מזוודה מס' 1 */
+div#luggagenumber1{
+    text-align:center;
+    font-family:arial;
+    display:inline-block;
+    border: solid 1px transparent;
+}
+
+div#luggagenumber1:hover{
+    background: #e1e1e173;
+    border-top: 1px solid #d0d0d086;
+}
+
+.luggagepic1{
+    width:80px;
+    margin-right:0;
+}
+
+/* מזוודה מס' 2 */
+div#luggagenumber2{
+    text-align:center;
+    font-family:arial;
+    display:inline-block;
+    border: solid 1px transparent;
+}
+
+div#luggagenumber2:hover{
+    background: #e1e1e173;
+    border-top: 1px solid #d0d0d086;
+}
+.luggagepic2{
+    width:100px;
+    margin-right:0;
+
+}
+
+/* מזוודה מס' 3 */
+div#luggagenumber3{
+    text-align:center;
+    font-family:arial;
+    display:inline-block;
+    border: solid 1px transparent;
+}
+
+div#luggagenumber3:hover{
+    background: #e1e1e173;
+    border-top: 1px solid #d0d0d086;
+}
+
+.luggagepic3{
+    width:100px;
+    margin-right:0;
+
+}
+
+/* מזוודה מס' 4 */
+div#luggagenumber4{
+    text-align:center;
+    font-family:arial;
+    display:inline-block;
+    border: solid 1px transparent;
+}
+
+div#luggagenumber4:hover{
+    background: #e1e1e173;
+    border-top: 1px solid #d0d0d086;
+}
+
+.luggagepic4{
+    width:80px;
+    margin-right:0;
+
+}
+/* מזוודה מס' 5 */
+div#luggagenumber5{
+    text-align:center;
+    font-family:arial;
+    display:inline-block;
+    border: solid 1px transparent;
+}
+
+div#luggagenumber5:hover{
+    background: #e1e1e173;
+    border-top: 1px solid #d0d0d086;
+}
+.luggagepic5{
+    width:80px;
+    margin-right:0;
+}
+
+/* מזוודה מס' 6 */
+div#luggagenumber6{
+    text-align:center;
+    font-family:arial;
+    display:inline-block;
+    border: solid 1px transparent;
+}
+
+div#luggagenumber6:hover{
+    background: #e1e1e173;
+    border-top: 1px solid #d0d0d086;
+}
+
+.luggagepic6{
+    width:80px;
+    margin-right:0;
+}
+
+/*עיצוב הכפתור*/
+.catalogbutton{
+    background-color:black;
+    color:white;
+    position:relative;
+    width:100px;
+    height:25px;
+    top:5px;
+    right:860px;
+    border-radius: 4em;
+    font-size: 16px;
+    cursor:pointer;
+    user-select:none;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+}
+.catalogbutton:hover {
+    transition-duration: 0.1s;
+    background-color: #3A3A3A;
+}
+  
+.catalogbutton:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    box-shadow: 0 0 10px 40px white;
+}
+
+.catalogbutton:active:after {
+    box-shadow: 0 0 0 0 white;
+    position: absolute;
+    border-radius: 4em;
+    left: 0;
+    top:0;
+    opacity: 1;
+    transition: 0s;
+}
+
+.catalogbutton:active {
+    top: 1px;
+}
+
+/* באנר2 */
+  .banner2background{
+    position:relative;
+    top:15px;
+  }
+  
+  #banner2{
+    object-fit: cover;
+    width: 996px;
+    height:150px;
+  }
+
+/* כותרת המותגים שלנו*/
+  #our_brands_h1{
+    font-family:arial;
+    margin-top:23px;
+    margin-right: 15px;
+}
+
+/* לורם בעברית*/
+.hebrewlorem{
+    display:inline-block;
+    width:594px;
+    vertical-align: super;
+    font-family:arial;
+    text-align:center;
+}
+
+/* חץ שמאל*/
+.fa-chevron-left{
+    color:rgb(113, 178, 238);
+    font-size:6rem;
+
+}   
+/* חץ ימין*/
+.fa-chevron-right{
+    color:rgb(113, 178, 238);
+    font-size:6rem;    
+    width:55px;
+}  
+
+/*תמונת המותג*/
+img#brandpic{
+    width:auto;
+    height:auto;
+    display:inline;
+    vertical-align: sub;
+}
+
+/* באנר 3 */
+.banner3background{
+    top:15px;
+    position: relative;
+
+}
+
+.banner3background img{
+    object-fit: cover;
+    width: 996px;
+    height:150px;
+}
+
+/* קצת עלינו */
+.about_us{
+    height:245px;
+}
+
+.about_us h1{
+    font-family:arial;
+    margin-top:23px;
+    margin-right: 15px;
+}
+p#bold_text
+{
+    float:right;
+    width:30%;
+    font-weight:bold;
+    font-family:arial;
+    margin-right:85px;
+    margin-top:55px;
+}
+.text{
+    float:left;
+    width:591px;
+    font-family:arial;
+}
+
+/* footer */
+footer{
+    width:100%;
+    height:105px;
+    background-color:#a2d5f1;
+}
+footer span{
+    position: relative;
+    top: 50%; 
+    right: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width:100%;
+    }
+    img#logo{
+        width:288px;
+    }
+    .buttons{
+        margin-left: 31px;
+        bottom: 11px;
+        right: 19px;
+    }
+    img#banner{
+        width:100%;
+        display:block;
+
+    }
+    .luggages{
+        display:block;
+
+    }
+    div#luggagenumber1{
+        display:block;
+        margin:0 auto;
+        width:117px;
+   }
+    div#luggagenumber2{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber3{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber4{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber5{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber6{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+    .catalogbutton{
+        position:relative;
+        right: 271px;   
+    }
+
+    img#banner2{
+        width:100%;
+        display:block;
+    }
+    .our_brands{
+        width:100%;
+    }
+
+    .fa-chevron-right{
+        font-size: 4rem;
+        width:15px;
+    }
+    img#brandpic{
+        max-width: 30%;
+        vertical-align: super;
+        margin-right: 4px;
+    }
+    .hebrewlorem{
+        font-size: 8px;
+        width: 199px;
+    }
+    .fa-chevron-left{
+        font-size: 4rem;
+    }
+    img#banner3{
+    width:100%;
+    display:block;
+}
+
+    .about_us{
+        width:100%;
+        height:270px;
+        margin-top:5px;
+    }
+
+    p#bold_text{
+        margin-right: 26px;
+        margin-top: 10px;
+        width: 365px;
+    }
+    .text{
+        width:336px;
+    }
+    footer{
+        height: 380px;
+    display:inline-block;
+    }
+    span{
+        
+    }
+}
+/* 
+@media only screen and (min-width: 320px) and (max-width: 764px) {
+    .container{
+        width:100%;
+    }
+    .buttons{
+        margin-left:5px;
+        bottom: 11px;
+        right: 50px;
+    }
+    img#banner{
+        width:100%;
+        display:block;
+
+    }
+    .luggages{
+        display:block;
+
+    }
+    div#luggagenumber1{
+        display:block;
+        margin:0 auto;
+        width:117px;
+   }
+    div#luggagenumber2{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber3{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber4{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber5{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber6{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+    .catalogbutton{
+        position:relative;
+        right: 360px;   
+    }
+
+    img#banner2{
+        width:100%;
+        display:block;
+    }
+    .our_brands{
+        width:100%;
+    }
+
+    .fa-chevron-right{
+        font-size: 4rem;
+    }
+    img#brandpic{
+        max-width: 30%;
+        vertical-align: super;
+    }
+    .hebrewlorem{
+        font-size: 9px;
+        padding-left: 11px;
+        width: 228px;
+    }
+    .fa-chevron-left{
+        font-size: 4rem;
+    }
+    img#banner3{
+    width:100%;
+    display:block;
+}
+
+    .about_us{
+        width:100%;
+        height:270px;
+        margin-top:5px;
+    }
+
+    p#bold_text{
+        width: 150px;
+        margin-right: 59px;
+        margin-top: 10px;
+    }
+    .text{
+        width:131px;
+    }
+    footer{
+    display:inline-block;
+    }
+
+} */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)   {
+    .container{
+        width:100%;
+    }
+    .buttons{
+        margin-left:5px;
+        bottom: 11px;
+        right: 50px;
+    }
+    img#banner{
+        width:100%;
+        display:block;
+
+    }
+    .luggages{
+        display:block;
+
+    }
+    div#luggagenumber1{
+        display:block;
+        margin:0 auto;
+        width:117px;
+   }
+    div#luggagenumber2{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber3{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber4{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber5{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber6{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+    .catalogbutton{
+        position:relative;
+        right: 360px;   
+    }
+
+    img#banner2{
+        width:100%;
+        display:block;
+    }
+    .our_brands{
+        width:100%;
+    }
+
+    .fa-chevron-right{
+        font-size: 4rem;
+    }
+    img#brandpic{
+        max-width: 30%;
+        vertical-align: super;
+    }
+    .hebrewlorem{
+        font-size: 9px;
+        padding-left: 11px;
+        width: 228px;
+    }
+    .fa-chevron-left{
+        font-size: 4rem;
+    }
+    img#banner3{
+    width:100%;
+    display:block;
+}
+
+    .about_us{
+        width:100%;
+        height:270px;
+        margin-top:5px;
+    }
+
+    p#bold_text{
+        width: 150px;
+        margin-right: 59px;
+        margin-top: 10px;
+    }
+    .text{
+        width:131px;
+    }
+    footer{
+    display:inline-block;
+    }
+}
+/* 
+@media only screen and (min-width: 1024px) {
+    .container{
+        width:100%;
+    }
+    .buttons{
+        margin-left:5px;
+        bottom: 11px;
+        right: 50px;
+    }
+    img#banner{
+        width:100%;
+        display:block;
+
+    }
+    .luggages{
+        display:block;
+
+    }
+    div#luggagenumber1{
+        display:block;
+        margin:0 auto;
+        width:117px;
+   }
+    div#luggagenumber2{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber3{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber4{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber5{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+
+    div#luggagenumber6{
+        display:block;
+        margin:0 auto;
+        width:117px;
+    }
+    .catalogbutton{
+        position:relative;
+        right: 360px;   
+    }
+
+    img#banner2{
+        width:100%;
+        display:block;
+    }
+    .our_brands{
+        width:100%;
+    }
+
+    .fa-chevron-right{
+        font-size: 4rem;
+    }
+    img#brandpic{
+        max-width: 30%;
+        vertical-align: super;
+    }
+    .hebrewlorem{
+        font-size: 9px;
+        padding-left: 11px;
+        width: 228px;
+    }
+    .fa-chevron-left{
+        font-size: 4rem;
+    }
+    img#banner3{
+    width:100%;
+    display:block;
+}
+
+    .about_us{
+        width:100%;
+        height:270px;
+        margin-top:5px;
+    }
+
+    p#bold_text{
+        width: 150px;
+        margin-right: 59px;
+        margin-top: 10px;
+    }
+    .text{
+        width:131px;
+    }
+    footer{
+    display:inline-block;
+    }
+} */
